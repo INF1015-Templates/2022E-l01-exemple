@@ -1,9 +1,25 @@
-# Exemple de repo Github pour INF1015
+# Exemple de template pour TD
 
-[Vcpkg.md](doc/Vcpkg.md) Montre comment se servir de Vcpkg sur Windows, Linux et MacOS à l'aide de Visual Studio ou de VSCode et CMake.
+## Exercice 1 : Hello world
 
-Dans le dossier *Exercises* se trouve un projet C++ avec deux sources et un entête : [main.cpp](Exercices/main.cpp), [Arguments.cpp](Exercices/Arguments.cpp) et [Arguments.hpp](Exercices/Arguments.hpp). Ceux-ci utilisent des bibliothèques externes disponibles à travers Vcpkg. Le projet est disponible en solution Visual Studio 2019 ([Exercises.sln](Exercises/Exercises.sln)) et en format CMake ([CMakeLists.txt](Exercises/CMakeLists.txt)) configuré pour VSCode (un [settings.json](Exercises/.vscode/settings.json) est fourni).
+Dans la fonction `helloWorld()` du fichier [exo1.cpp](Exercises/exo1.cpp), faites un *hello world* dans la console.
 
-Pour les enseignants, [Classroom.md](doc/Classroom.md) donne la procédure à suivre pour créer un exercice sur Github à l'aide de Github Classroom et de quelques outils tiers.
+## Exercice 2 : Multiples
 
+Dans le fichier [exo2.cpp](Exercises/exo2.cpp), compléter la fonction `multiplesOf()`. Elle prend en paramêtre une racine et une borne, toutes deux des entiers supérieurs à 1, et affiche dans la console les multiples de la racine plus petits que la borne donnée. N'oubliez pas de copier la signature de la fonction dans le fichier d'entête correspondant [exo2.hpp](Exercises/exo2.hpp)
+
+Par exemple :
+```c++
+multiplesOf(3, 14);
+multiplesOf(4, 20);
+```
+Devrait afficher :
+```
+6 9 12
+8 12 16
+```
+
+## Main
+
+Dans [main.cpp](Exercises/main.cpp), utilisez les deux fonctions. Dans le cas de l'exercice 2, essayez plusieurs combinaisons qui permettent de tester les différents cas.
 

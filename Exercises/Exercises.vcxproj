@@ -147,11 +147,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Arguments.cpp" />
+    <ClCompile Include="exo1.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="exo2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Arguments.hpp" />
+    <ClInclude Include="exo1.hpp" />
+    <ClInclude Include="exo2.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
